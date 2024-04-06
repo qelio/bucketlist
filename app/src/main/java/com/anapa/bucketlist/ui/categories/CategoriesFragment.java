@@ -24,9 +24,12 @@ public class CategoriesFragment extends Fragment {
         binding = FragmentCategoriesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        /*
         final TextView textView = binding.textCategories;
         categoriesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        */
         return root;
+
     }
 
     @Override

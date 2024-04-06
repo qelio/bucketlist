@@ -24,8 +24,10 @@ public class InspirationFragment extends Fragment {
         binding = FragmentInspirationBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        /*
         final TextView textView = binding.textInspiration;
         inspirationViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        */
         return root;
     }
 
