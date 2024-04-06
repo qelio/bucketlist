@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BucketList</string>
+    <string name="title_home">Home</string>
+    <string name="title_inspiration">Inspiration</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_categories">Categories</string>
+    <string name="hello_there">Hello there</string>
+</resources>
