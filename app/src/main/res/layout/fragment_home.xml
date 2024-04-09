@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="411dp"
-    android:layout_height="650dp"
+    android:layout_height="750dp"
     android:background="@drawable/back"
     tools:context=".MainActivity">
 
@@ -14,9 +14,11 @@
         android:layout_width="123sp"
         android:layout_height="50sp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="144dp"
+        android:layout_alignParentBottom="true"
 
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="160dp"
         android:background="@drawable/btn_bucketshape"
         android:text="Цель"
         android:textColor="#FFFFFF"
@@ -29,23 +31,33 @@
 
 
     <!-- Вкладки: активные и выполненные на главной странице -->
+    <!-- Размер под pixel 3(layout_width="393dp"), (match_parent) -->
     <com.google.android.material.tabs.TabLayout
-        android:layout_width="match_parent"
+        android:id="@+id/tab_layout"
+        android:layout_width="393dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:animateLayoutChanges="false"
+        android:textSize="13sp"
+
+        android:background="@drawable/btn_main_active"
+
+
         android:backgroundTint="@color/light_grey_1"
-        android:layout_marginTop="200dp"
-        app:tabTextColor="@color/orange_2"
         app:tabIndicatorColor="@color/orange_3"
-        android:id="@+id/tab_layout">
+        app:tabIndicatorHeight="4dp"
+        app:tabTextColor="@color/orange_2">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Активные"/>
+            android:layout_height="10dp"
+            android:background="@drawable/btn_main_active"
+            android:text="Активные" />
         <com.google.android.material.tabs.TabItem
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Выполненные"/>
+            android:background="@drawable/btn_main_active"
+            android:text="Достигнутые"/>
 
 
     </com.google.android.material.tabs.TabLayout>
