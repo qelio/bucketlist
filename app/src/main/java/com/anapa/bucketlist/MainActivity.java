@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Кнопка + c вкладки категории
+        Button plus_btn = (Button) findViewById(R.id.plus_btn);
+        angryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Добавление категории
+            }
+        });
+
 
         song = new String[] {
                 "Хакуна Матата!",
