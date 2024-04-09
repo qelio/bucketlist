@@ -42,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+        // Кнопка +Цель c домашней страницы
+        Button angryButton = (Button) findViewById(R.id.btn_bucket);
+        angryButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Добавление цели
+            }
+        });
+
+
         song = new String[] {
                 "Хакуна Матата!",
                 "Золотые слова!",

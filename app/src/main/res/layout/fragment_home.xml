@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:layout_width="411dp"
+    android:layout_height="650dp"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="325dp"
-        android:layout_height="314dp"
-        android:layout_marginTop="196dp"
-        android:autoText="false"
-        android:text="@string/hello_there"
-        android:textSize="60sp"
+    <!-- Кнопка цель на главной странице -->
+    <Button
+        android:id="@+id/btn_bucket"
+
+        android:layout_width="123sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="144dp"
+
+        android:background="@drawable/btn_bucketshape"
+        android:text="Цель"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconPadding="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Вкладки: активные и выполненные на главной странице -->
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey_1"
+        android:layout_marginTop="200dp"
+        app:tabTextColor="@color/orange_2"
+        app:tabIndicatorColor="@color/orange_3"
+        android:id="@+id/tab_layout">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Активные"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выполненные"/>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+
+</RelativeLayout>
