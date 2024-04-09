@@ -42,21 +42,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        // Кнопка +Цель c домашней страницы
-        Button angryButton = (Button) findViewById(R.id.btn_bucket);
-        angryButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Добавление цели
-            }
-        });
 
-        // Кнопка + c вкладки категории
-        Button plus_btn = (Button) findViewById(R.id.plus_btn);
-        angryButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Добавление категории
-            }
-        });
 
 
         song = new String[] {
