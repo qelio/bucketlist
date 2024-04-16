@@ -169,9 +169,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/line"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"></LinearLayout>
@@ -227,9 +228,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/line"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"></LinearLayout>
@@ -287,19 +289,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/line"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"></LinearLayout>
-
-
-
-
-
-
-
 
 
         <LinearLayout
@@ -347,9 +343,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/line"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"/>
