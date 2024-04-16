@@ -36,7 +36,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
-            android:layout_width="370dp"
+            android:layout_width="fill_parent"
             android:layout_height="54dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="140dp"
@@ -49,7 +49,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="-35dp"
@@ -62,7 +62,7 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="20dp"
                 android:background="@color/orange_3"
                 android:hint="Имя"
@@ -99,7 +99,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/orange_3"
                 android:hint="Дата рождения"
@@ -107,7 +107,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="370dp"
+            android:layout_width="fill_parent"
             android:layout_height="54dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="260dp"
@@ -120,7 +120,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="20dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="280dp"
@@ -133,7 +133,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/orange_3"
                 android:hint="Описание"
@@ -146,7 +146,7 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="53dp"
         android:layout_centerHorizontal="true"
         android:bottomLeftRadius="200000sp"
@@ -211,10 +211,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
             android:background="@drawable/line"
             android:orientation="horizontal"></LinearLayout>
 
@@ -232,8 +233,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="170dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="140dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
@@ -247,10 +248,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
             android:background="@drawable/line"
             android:orientation="horizontal"></LinearLayout>
 
@@ -282,10 +284,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
             android:background="@drawable/line"
             android:orientation="horizontal"></LinearLayout>
 
@@ -317,10 +320,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
             android:background="@drawable/line"
             android:orientation="horizontal" />
 
@@ -361,9 +365,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="340dp"
+            android:layout_width="fill_parent"
             android:layout_height="2dp"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
             android:background="@drawable/line"
             android:orientation="horizontal" />
 
