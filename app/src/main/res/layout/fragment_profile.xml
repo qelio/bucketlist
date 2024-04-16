@@ -73,7 +73,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="370dp"
+            android:layout_width="fill_parent"
             android:layout_height="54dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="200dp"
@@ -86,7 +86,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="20dp"
             android:layout_marginStart="25dp"
             android:layout_marginTop="220dp"
@@ -197,9 +197,10 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginEnd="220dp"
                 android:layout_weight="1"
+                android:textAllCaps="false"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:padding="0dp"
@@ -233,11 +234,12 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="140dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="170dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
+                android:textAllCaps="false"
                 android:padding="0dp"
                 android:paddingEnd="0dp"
                 android:text="Сообщить о проблеме"
@@ -270,12 +272,13 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginEnd="245dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:padding="0dp"
+                android:textAllCaps="false"
                 android:text="Оцените нас"
                 android:textColor="@color/orange_3"
                 android:textSize="16sp" />
@@ -306,13 +309,14 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginEnd="180dp"
                 android:layout_weight="1"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
                 android:padding="0dp"
                 android:text="Версия приложения"
+                android:textAllCaps="false"
                 android:textColor="@color/orange_3"
                 android:textSize="16sp" />
 
@@ -340,11 +344,12 @@
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
+                android:layout_marginStart="33dp"
                 android:layout_marginEnd="150dp"
 
                 android:layout_weight="1"
                 android:text="Язык"
+
                 android:textColor="@color/orange_3"
                 android:textSize="20sp" />
 
