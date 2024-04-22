@@ -3,13 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
     android:layout_height="match_parent"
-    android:background="@color/light_grey_1">
+    android:background="@color/light_grey_1"
+    >
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="53dp"
+
         android:bottomLeftRadius="200000sp"
         android:bottomRightRadius="200000dp"
         android:layout_centerHorizontal="true"
@@ -31,40 +35,73 @@
     </TextView>
 
 
+    <LinearLayout
+        android:id="@+id/container4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+
+       >
+
+    <LinearLayout
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
 
     <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_marginStart="41dp"
-            android:layout_marginEnd="49dp">
+            android:gravity="center"
+            android:layout_marginEnd="49dp"
+        >
+
 
             <ImageButton
                 android:id="@+id/imageButton10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="match_parent"
+                android:layout_weight="60"
+
+
+
+
+
                 android:backgroundTint="@color/light_grey_1"
                 app:srcCompat="@drawable/icon1" />
 
             <ImageButton
                 android:id="@+id/imageButton11"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="60"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/light_grey_1"
                 app:srcCompat="@drawable/icon3" />
 
             <ImageButton
                 android:id="@+id/imageButton12"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="60"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/light_grey_1"
                 app:srcCompat="@drawable/icon2" />
 
             <ImageButton
                 android:id="@+id/imageButton13"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="60"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/light_grey_1"
                 app:srcCompat="@drawable/icon4" />
@@ -75,34 +112,39 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="0dp"
         android:layout_marginStart="41dp"
+        android:gravity="center"
         android:layout_marginEnd="49dp">
 
         <ImageButton
             android:id="@+id/imageButton16"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon7" />
 
         <ImageButton
             android:id="@+id/imageButton17"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon8" />
 
         <ImageButton
             android:id="@+id/imageButton18"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon5" />
 
         <ImageButton
             android:id="@+id/imageButton19"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon6" />
@@ -112,34 +154,39 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
         android:layout_marginStart="41dp"
         android:layout_marginEnd="49dp">
 
         <ImageButton
             android:id="@+id/imageButton22"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon12" />
 
         <ImageButton
             android:id="@+id/imageButton23"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon11" />
 
         <ImageButton
             android:id="@+id/imageButton24"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon10" />
 
         <ImageButton
             android:id="@+id/imageButton25"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon9" />
@@ -150,34 +197,39 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="0dp"
         android:layout_marginStart="41dp"
+        android:gravity="center"
         android:layout_marginEnd="49dp">
 
         <ImageButton
             android:id="@+id/imageButton32"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon15" />
 
         <ImageButton
             android:id="@+id/imageButton33"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon18" />
 
         <ImageButton
             android:id="@+id/imageButton34"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="60"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon14" />
 
         <ImageButton
             android:id="@+id/imageButton35"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon13" />
@@ -188,25 +240,48 @@
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
         android:layout_marginStart="41dp"
         android:layout_marginEnd="49dp">
 
         <ImageButton
             android:id="@+id/imageButton42"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon17" />
 
         <ImageButton
             android:id="@+id/imageButton43"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_grey_1"
             app:srcCompat="@drawable/icon16" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/imageButton45"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_grey_1"
+            android:foreground="@color/light_grey_1"
+            app:srcCompat="@drawable/icon17" />
 
+        <ImageButton
+            android:id="@+id/imageButton46"
+            android:layout_width="match_parent"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_grey_1"
+            android:foreground="@color/light_grey_1"
+            app:srcCompat="@drawable/icon17" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>

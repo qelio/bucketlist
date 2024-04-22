@@ -30,39 +30,102 @@
 
     </TextView>
 
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
 
-    <TextView
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+        <TextView
         android:id="@+id/textView3"
 
         android:layout_width="wrap_content"
         android:textAllCaps="false"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="0dp"
         android:text="Самые популярные"
         android:textColor="@color/orange_2"
         android:textSize="18dp" />
 
-    <Button
-        android:id="@+id/button14"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="57dp"
-        android:layout_marginStart="240dp"
-        android:backgroundTint="@color/light_grey_1"
-        android:text="Посмотреть все"
-        android:textAllCaps="false"
-        android:textSize="16dp"
-        android:textColor="@color/orange_2" />
+        <Button
+            android:id="@+id/button14"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="-35dp"
+            android:backgroundTint="@color/light_grey_1"
+            android:text="Посмотреть все"
+            android:textAllCaps="false"
+            android:textColor="@color/orange_2"
+            android:textSize="16dp" />
 
-    <TextView
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/scrollpage1" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/scrollpage2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+
+        <TextView
         android:id="@+id/textView4"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="326dp"
         android:text="Самые новые"
         android:textAllCaps="false"
         android:textColor="@color/orange_2"
@@ -73,48 +136,19 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="317dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-35dp"
         android:backgroundTint="@color/light_grey_1"
         android:text="Посмотреть все"
         android:textAllCaps="false"
         android:textColor="@color/orange_2"
         android:textSize="16dp" />
 
-    <HorizontalScrollView
+
+        <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_marginTop="110dp"
-        android:layout_marginBottom="380dp"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="25dp"
-                android:layout_weight="1"
-                android:src="@drawable/scrollpage1" />
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/scrollpage2" />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_marginTop="370dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -139,14 +173,20 @@
                 android:src="@drawable/scrollpage4" />
         </LinearLayout>
     </HorizontalScrollView>
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
     <TextView
         android:id="@+id/textView5"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="569dp"
+        android:layout_marginTop="0dp"
         android:text="Случайные идеи"
         android:textAllCaps="false"
         android:textColor="@color/orange_2"
@@ -157,13 +197,15 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="240dp"
-        android:layout_marginTop="557dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="-35dp"
         android:backgroundTint="@color/light_grey_1"
         android:text="Посмотреть все"
         android:textAllCaps="false"
         android:textColor="@color/orange_2"
         android:textSize="16dp" />
 
-
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

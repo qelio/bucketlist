@@ -4,14 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/reg_vk_btn"
+    <RelativeLayout
+        android:id="@+id/person2121"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="410dp"
-        android:background="@color/white"
-        app:srcCompat="@drawable/regvk" />
+        android:orientation="vertical">
 
     <ImageView
         android:id="@+id/person"
@@ -22,14 +19,23 @@
         android:background="@color/white"
         app:srcCompat="@drawable/person2" />
 
+
+    <RelativeLayout
+        android:id="@+id/person212121"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
     <ImageButton
-        android:id="@+id/reg_btn"
-        android:layout_width="wrap_content"
+        android:id="@+id/reg_vk_btn"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="410dp"
         android:background="@color/white"
-        app:srcCompat="@drawable/reg" />
+
+        app:srcCompat="@drawable/regvk" />
 
     <ImageButton
         android:id="@+id/login_btn"
@@ -41,6 +47,15 @@
         app:srcCompat="@drawable/reglogin" />
 
     <ImageButton
+        android:id="@+id/reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/reg" />
+
+    <ImageButton
         android:id="@+id/guest_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,4 +63,6 @@
         android:layout_centerHorizontal="true"
         android:background="@color/white"
         app:srcCompat="@drawable/loginguest" />
+    </RelativeLayout>
+</RelativeLayout>
 </RelativeLayout>
