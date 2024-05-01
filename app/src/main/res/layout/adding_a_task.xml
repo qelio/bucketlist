@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_grey_1"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:bottomLeftRadius="200000sp"
+        android:bottomRightRadius="200000dp"
+        android:foreground="@drawable/title_page">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="9dp"
+        android:text="Настройки"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="179dp">
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@color/light_grey_1"
+            android:backgroundTint="@color/light_grey_1"
+            android:gravity="center"
+            android:src="@drawable/image_adding_task"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Нет списка задач!"
+            android:textColor="@color/orange_2"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="39dp"
+            android:foreground="@drawable/btn_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="25dp"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:StrokeColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@color/orange_3"
+                android:hint="Добавить задачу"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
