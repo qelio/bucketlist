@@ -20,12 +20,12 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_width="130dp"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="140dp"
         android:layout_marginTop="9dp"
-        android:text="Настройки"
+        android:text="Список задач"
         android:textColor="#FFFFFF"
         android:textSize="25dp">
 
