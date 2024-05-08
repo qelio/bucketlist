@@ -56,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
                 "И жизнь легка",
                 "Хакуна Матата!",
         };
+
+        binding.openBsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyBottomSheet myBottomSheet = new MyBottomSheet();
+                myBottomSheet.show(getSupportFragmentManager(), "my bottom sheet dialog");
+            }
+        });
     }
 
 }
