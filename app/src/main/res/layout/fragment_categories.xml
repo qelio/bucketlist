@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.categories.CategoriesFragment"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@color/light_grey_1">
 
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:bottomLeftRadius="200000sp"
@@ -19,44 +21,220 @@
     </RelativeLayout>
 
     <TextView
-        android:layout_width="130dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_height="30dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="5dp"
         android:text="Категории"
         android:textColor="#FFFFFF"
         android:textSize="25dp">
 
     </TextView>
 
-    <Button
-        android:id="@+id/plus_btn"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="21dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/plus_btn"
+
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
 
 
-        android:background="@drawable/btn_circle"
-        android:foreground="@android:drawable/ic_input_add"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="40dp"
 
-        android:foregroundTint="@color/white"
-        android:textColor="#FFFFFF" />
+                    android:background="@drawable/btn_circle"
+                    android:foreground="@android:drawable/ic_input_add"
+                    android:foregroundTint="@color/white"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="205dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="78dp"
-        android:text="Добавить категорию"
-        android:textColor="@color/orange_2"
-        android:textSize="18dp">
+                <TextView
+                    android:layout_width="205dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="75dp"
+                    android:text="Добавить категорию"
+                    android:textColor="@color/orange_2"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toStartOf="@+id/plus_btn"
+                    app:layout_constraintTop_toTopOf="parent">
 
-    </TextView>
+                </TextView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="0dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginTop="140dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/lin2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <FrameLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_weight="1"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center">
+
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/add_categories_page_photo"
+                                        app:shapeAppearanceOverlay="@style/roundImageView" />
+
+                                    <TextView
+                                        android:id="@+id/textView11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginStart="70dp"
+                                        android:layout_marginTop="90dp"
+                                        android:gravity="center"
+                                        android:text="Спорт"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar3"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginTop="110dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:progress="100"
+                                        android:progressTint="@android:color/holo_green_light" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/ellipse" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="12dp"
+                                        android:src="@drawable/power2"
+                                        app:tint="@color/grey" />
+
+                                </FrameLayout>
+
+
+                                <FrameLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="120dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:id="@+id/imageView11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/photo_adding_bucket"
+                                        app:shapeAppearanceOverlay="@style/roundImageView" />
+
+
+                                    <TextView
+                                        android:id="@+id/textView1131"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginStart="70dp"
+                                        android:layout_marginTop="90dp"
+                                        android:gravity="center"
+                                        android:text="Спорт"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar321"
+                                        style="?android:attr/progressBarStyleHorizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginTop="110dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:progress="50"
+                                        android:progressTint="@android:color/holo_green_light" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView21121"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:src="@drawable/ellipse" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView2212"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="12dp"
+                                        android:layout_marginTop="12dp"
+                                        android:src="@drawable/world"
+                                        app:tint="@color/grey" />
+
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>
