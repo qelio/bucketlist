@@ -1,6 +1,7 @@
 package com.anapa.bucketlist;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -23,8 +24,6 @@ import com.anapa.bucketlist.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private String[] song;
-    private int time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +42,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
 
-
-
-        song = new String[] {
-                "Хакуна Матата!",
-                "Золотые слова!",
-                "Хакуна Матата!",
-                "Знай свои права!",
-                "Набит желудок",
-                "И пуста голова",
-                "Закусил слегка",
-                "И жизнь легка",
-                "Хакуна Матата!",
-        };
-
         binding.openBsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
                 myBottomSheet.show(getSupportFragmentManager(), "my bottom sheet dialog");
             }
         });
+    }
+
+    public void onAddBucketButtonClick(View view){
+        Intent intent = new Intent(this, AddBucketActivity.class);
+        startActivity(intent);
     }
 
 }
