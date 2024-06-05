@@ -85,6 +85,7 @@
             app:hintTextColor="@color/orange_3">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_bucket_name"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -113,6 +114,7 @@
             app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/new_bucket_description"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"

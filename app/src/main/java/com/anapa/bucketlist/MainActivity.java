@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -21,9 +22,16 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.anapa.bucketlist.databinding.ActivityMainBinding;
 
+import java.io.Console;
+import java.sql.Time;
+import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    public static ArrayList<Bucket> Buckets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +49,17 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+        Buckets = new ArrayList<Bucket>();
+        SaveBuckets();
+
+        Timer logTimer = new Timer();
+        logTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Log.d("BucketsCount:", Integer.toString(Buckets.size()));
+            }
+        }, 0, 2000);
+
 
         binding.openBsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
                 myBottomSheet.show(getSupportFragmentManager(), "my bottom sheet dialog");
             }
         });
+    }
+
+    public static void SaveBuckets() {
+
     }
 
     public void onAddBucketButtonClick(View view){
