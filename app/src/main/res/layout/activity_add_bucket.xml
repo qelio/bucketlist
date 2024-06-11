@@ -82,7 +82,7 @@
             android:textColorHint="@color/white"
             app:boxStrokeColor="@color/orange_2"
             app:boxStrokeWidth="0dp"
-            app:hintTextColor="@color/orange_3">
+            app:hintTextColor="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/new_bucket_name"
@@ -106,6 +106,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.Material3.TextInputEditText.FilledBox"
+            android:layout_marginTop="285dp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColorHint="@color/white"
@@ -118,7 +119,6 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="285dp"
                 android:layout_marginEnd="10dp"
                 android:background="@drawable/btn_save"
                 android:hint="Описание"
@@ -365,7 +365,6 @@
 
         <Button
             android:id="@+id/btn_save"
-
             android:layout_width="170dp"
             android:layout_height="39dp"
             android:layout_centerHorizontal="true"
