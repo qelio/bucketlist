@@ -5,16 +5,20 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.widget.SimpleCursorAdapter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class GoalDB {
+public class GoalDB implements Serializable {
+    private static final long serialVersionUID = 1L;
     int id, achieved, categories_id;
-    String deadline, list_cases;
+    String name, description, deadline, list_cases;
 
-    public GoalDB(int id, int achieved, int categories_id, String deadline, String list_cases) {
+    public GoalDB(int id, int achieved, int categories_id, String name, String description, String deadline, String list_cases) {
         this.id = id;
         this.achieved = achieved;
         this.categories_id = categories_id;
+        this.name = name;
+        this.description = description;
         this.deadline = deadline;
         this.list_cases = list_cases;
     }
@@ -43,6 +47,22 @@ public class GoalDB {
         this.categories_id = categories_id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getDeadline() {
         return deadline;
     }
@@ -58,6 +78,7 @@ public class GoalDB {
     public void setList_cases(String list_cases) {
         this.list_cases = list_cases;
     }
+
     public String getCategory_name (Context context) {
         DataBaseHelper databaseHelper;
         SQLiteDatabase db;

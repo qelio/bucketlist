@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/categories_bottom_sheet"
     android:background="@color/orange_2"
-    tools:context=".MyBottomSheet">
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,147 +15,20 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
             android:layout_height="match_parent">
 
-            <Button
-
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="108dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Путешествия"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-
-                android:id="@+id/button2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="108dp"
-                android:layout_marginEnd="21dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Здоровье"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button"
-                app:layout_constraintTop_toTopOf="parent" />
+                <ListView
+                    android:id="@+id/listview_contests"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:divider="#FA9359"
+                    android:dividerHeight="10dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="165dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Осознанность"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-
-                android:id="@+id/button4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="165dp"
-                android:layout_marginEnd="21dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Карьера"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button3"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-
-                android:id="@+id/button5"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="220dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Учеба"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintEnd_toStartOf="@+id/button6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-
-                android:id="@+id/button6"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="220dp"
-                android:layout_marginEnd="21dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Хобби"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button5"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-
-                android:id="@+id/button7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="275dp"
-                android:layout_marginEnd="156dp"
-                android:backgroundTint="@color/orange_1"
-                android:text="Не определено"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
-                android:textSize="21sp"
-                app:cornerRadius="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
@@ -173,45 +47,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text="Варианты фильтрации"
+        android:text="Доступные категории"
         android:textColor="@color/white"
         android:textSize="21sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="75dp"
-        android:text="Показать категории"
-        android:textColor="@color/white"
-
-        android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/show_toast_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="Show toast"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/my_bs_tv" />
-
-    <Button
-        android:id="@+id/dismissBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:text="Show toast"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/my_bs_tv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

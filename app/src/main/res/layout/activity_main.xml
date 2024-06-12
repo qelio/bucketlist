@@ -34,16 +34,7 @@
         app:navGraph="@navigation/mobile_navigation" />
 
 
-    <ImageButton
-        android:id="@+id/open_bs_btn"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="39dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/filter"
-        android:text="Open Bottom Sheet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,21 +53,22 @@ public class MainActivity extends AppCompatActivity {
         SaveBuckets();
 
         Timer logTimer = new Timer();
-        logTimer.schedule(new TimerTask() {
+        /* logTimer.schedule(new TimerTask() {
             @Override
             public void run() {
                 Log.d("BucketsCount:", Integer.toString(Buckets.size()));
             }
-        }, 0, 2000);
+        }, 0, 2000); */
 
 
+        /*
         binding.openBsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MyBottomSheet myBottomSheet = new MyBottomSheet();
                 myBottomSheet.show(getSupportFragmentManager(), "my bottom sheet dialog");
             }
-        });
+        }); */
     }
 
     public static void SaveBuckets() {

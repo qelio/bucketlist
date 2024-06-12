@@ -12,18 +12,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-class DataBaseHelper extends SQLiteOpenHelper {
-    private static String DB_PATH; // полный путь к базе данных
+public class DataBaseHelper extends SQLiteOpenHelper {
+    private static String DB_PATH;
     private static String DB_NAME = "sqlite.db";
-    private static final int SCHEMA = 1; // версия базы данных
-    static final String TABLE = "users"; // название таблицы в бд
-    // названия столбцов
-    static final String COLUMN_ID = "_id";
-    static final String COLUMN_NAME = "name";
-    static final String COLUMN_YEAR = "year";
+    private static final int SCHEMA = 1;
     private Context myContext;
 
-    DataBaseHelper(Context context) {
+    public DataBaseHelper(Context context) {
         super(context, DB_NAME, null, SCHEMA);
         this.myContext=context;
         DB_PATH =context.getFilesDir().getPath() + DB_NAME;
@@ -34,16 +29,11 @@ class DataBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion,  int newVersion) { }
 
-    void create_db(){
-
+    public void create_db(){
         File file = new File(DB_PATH);
         if (!file.exists()) {
-            //получаем локальную бд как поток
             try(InputStream myInput = myContext.getAssets().open(DB_NAME);
-                // Открываем пустую бд
                 OutputStream myOutput = new FileOutputStream(DB_PATH)) {
-
-                // побайтово копируем данные
                 byte[] buffer = new byte[1024];
                 int length;
                 while ((length = myInput.read(buffer)) > 0) {
@@ -52,12 +42,11 @@ class DataBaseHelper extends SQLiteOpenHelper {
                 myOutput.flush();
             }
             catch(IOException ex){
-                Log.d("DatabaseHelper", ex.getMessage());
+                Log.d("DataBaseHelper", ex.getMessage());
             }
         }
     }
     public SQLiteDatabase open()throws SQLException {
-
         return SQLiteDatabase.openDatabase(DB_PATH, null, SQLiteDatabase.OPEN_READWRITE);
     }
 }

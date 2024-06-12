@@ -1,6 +1,9 @@
 package com.anapa.bucketlist;
 
-public class CategoryDB {
+import java.io.Serializable;
+
+public class CategoryDB implements Serializable {
+    private static final long serialVersionUID = 1L;
     int id;
     String name;
 
