@@ -15,7 +15,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="100dp"
             android:layout_height="match_parent">
 
                 <ListView
@@ -24,7 +24,7 @@
                     android:layout_height="match_parent"
                     android:visibility="visible"
                     android:divider="#FA9359"
-                    android:dividerHeight="10dp" />
+                    android:dividerHeight="5dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

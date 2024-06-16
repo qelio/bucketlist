@@ -11,7 +11,8 @@
         android:text="Не определено"
         android:textColor="@color/white"
         android:textAllCaps="false"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:textSize="21sp"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

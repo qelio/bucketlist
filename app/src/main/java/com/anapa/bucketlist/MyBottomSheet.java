@@ -23,7 +23,7 @@ public class MyBottomSheet extends BottomSheetDialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = MyBottomSheetDialogBinding.inflate(getLayoutInflater());
 
-        binding.dismissBtn.setOnClickListener(new View.OnClickListener() {
+        /* binding.dismissBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dismiss();
@@ -35,7 +35,7 @@ public class MyBottomSheet extends BottomSheetDialogFragment {
             public void onClick(View v) {
                 Toast.makeText(getContext(), "This is toast from my bottom sheet dialog fragment", Toast.LENGTH_SHORT).show();
             }
-        });
+        }); */
 
         return binding.getRoot();
     }

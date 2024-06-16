@@ -141,7 +141,7 @@
                 android:layout_height="match_parent"
                 android:visibility="visible"
                 android:layout_margin="10dp"
-                android:divider="@color/white"
+                android:divider="@color/light_grey_1"
                 android:dividerHeight="10dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
