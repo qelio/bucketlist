@@ -183,7 +183,8 @@ public class AddBucketActivity extends AppCompatActivity {
         }
     };
     private void setInitialDateTime() {
-        String day = Integer.toString(dateAndTime.get(Calendar.DAY_OF_MONTH)) , month = Integer.toString(dateAndTime.get(Calendar.MONTH) + 1);
+        String day = Integer.toString(dateAndTime.get(Calendar.DAY_OF_MONTH))
+                , month = Integer.toString(dateAndTime.get(Calendar.MONTH) + 1);
         if (Integer.parseInt(day) < 10) {
             day = "0" + day;
         }
